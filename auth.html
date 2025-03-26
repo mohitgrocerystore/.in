@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h2>Welcome to Grocery Store</h2>
+                <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="customer">Customer</button>
+                <button class="tab-btn" data-tab="seller">Seller</button>
+            </div>
+
+            <!-- Customer Forms -->
+            <div class="tab-content active" id="customerTab">
+                <div class="form-tabs">
+                    <button class="form-tab-btn active" data-form="customerLogin">Login</button>
+                    <button class="form-tab-btn" data-form="customerRegister">Register</button>
+                </div>
+
+                <!-- Customer Login Form -->
+                <form id="customerLoginForm" class="auth-form active">
+                    <div class="form-group">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPassword">Password</label>
+                        <input type="password" id="customerPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                    <p class="form-footer">Forgot password? <a href="#" class="form-link">Reset here</a></p>
+                </form>
+
+                <!-- Customer Register Form -->
+                <form id="customerRegisterForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="customerRegName">Full Name</label>
+                        <input type="text" id="customerRegName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerRegEmail">Email</label>
+                        <input type="email" id="customerRegEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerRegPhone">Phone Number</label>
+                        <input type="tel" id="customerRegPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerRegPassword">Password</label>
+                        <input type="password" id="customerRegPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerRegConfirmPassword">Confirm Password</label>
+                        <input type="password" id="customerRegConfirmPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Register</button>
+                </form>
+            </div>
+
+            <!-- Seller Forms -->
+            <div class="tab-content" id="sellerTab">
+                <div class="form-tabs">
+                    <button class="form-tab-btn active" data-form="sellerLogin">Login</button>
+                    <button class="form-tab-btn" data-form="sellerRegister">Register</button>
+                </div>
+
+                <!-- Seller Login Form -->
+                <form id="sellerLoginForm" class="auth-form active">
+                    <div class="form-group">
+                        <label for="sellerEmail">Email</label>
+                        <input type="email" id="sellerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerPassword">Password</label>
+                        <input type="password" id="sellerPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                    <p class="form-footer">Forgot password? <a href="#" class="form-link">Reset here</a></p>
+                </form>
+
+                <!-- Seller Register Form -->
+                <form id="sellerRegisterForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="sellerRegName">Business Name</label>
+                        <input type="text" id="sellerRegName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegEmail">Business Email</label>
+                        <input type="email" id="sellerRegEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegPhone">Business Phone</label>
+                        <input type="tel" id="sellerRegPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegGST">GST Number</label>
+                        <input type="text" id="sellerRegGST" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegAddress">Business Address</label>
+                        <textarea id="sellerRegAddress" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegPassword">Password</label>
+                        <input type="password" id="sellerRegPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerRegConfirmPassword">Confirm Password</label>
+                        <input type="password" id="sellerRegConfirmPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html> 
